@@ -9,6 +9,7 @@
 // upload-image
 
 //Buat variabel yang menampung data array secara universal
+//WOI
 let projects = []
 // Step 1 buat function menampung data hasil dari inputan project
 
