@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProject</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/project.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+  </head>
+  <body>
+
+      <!-- NAVBAR -->
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li class="img-logo">
+              <a href="index.html" target="Index">
+                  <img class="logo" src="assets/images/logo.png"/>
+              </a>
+            </li>
+            <li class="links">
+              <a class="active" href="index.html">Home</a>
+            </li>
+            <li class="links">
+              <a href="myProject.html">My Project</a>
+            </li>
+            <li class="links">
+              <a href="testimonial.html">Testimonial</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <!-- a adalah ancor sebagai navigasi / kemana tujuan link href tersebut -->
+          <a href="contactForm.html">Contact Me</a>
+        </div>
+        <div class="toggle-nav" id="bars-menu">
+          <button class="btn-menu" onclick="openBars()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      </nav>
+
+      <div class="nav-mobile" id="nav-bars">
+        <div class="nav-mobile-index">
+        <a class="active-mobile" href="index.html">Home</a>
+        <a href="myProject.html">My Project</a>
+        <a href="testimonial.html">Testimonial</a>
+        </div>
+        <div class="nav-mobile-contact">
+          <a href="contactForm.html">Contact Me</a>
+        </div>
+      </div>
+
+
+<!-- FORM INPUT PROJECT -->
+<div class="container-title">
+    <h1>ADD MY PROJECT</h1>
+</div>
+
+<form onsubmit="getProject(event)">
+  <div class="container">  
+    <div class="container2">
+      <label for="project-name">Project Name</label>
+      <input id="project-name" type="text" />
+    </div>
+    
+    <div class="container3">
+      <div>
+        <label for="start-date">Start Date</label>
+        <input id="start-date" type="date" />
+      </div>
+      <div>
+        <label for="end-date">End Date</label>
+        <input id="end-date" type="date" />
+      </div>
+    </div>
+
+    <!-- Form dengan kanvas yang lebih besar -->
+    <div class="container2">
+      <label for="project-description">Description</label>
+      <textarea id="project-description"></textarea>
+    </div>
+
+    <!-- CHECKBOX TECHNOLOGIES -->
+    <div>
+      <label class="title-tech">Technologies</label>
+
+      <div class="container-tech">
+        <div class="left-tech">
+          <div class="input-tech">
+            <input id="tech1" type="checkbox">
+            <label>JavaScript</label>
+          </div>
+          <div class="input-tech">
+            <input id="tech2" type="checkbox">
+            <label>GoLang</label>
+          </div>
+        </div>
+
+        <div class="right-tech">
+          <div class="input-tech">
+            <input id="tech3" type="checkbox">
+            <label>Python</label>
+          </div>
+          <div class="input-tech">
+            <input id="tech4" type="checkbox">
+            <label>Figma</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UPLOAD IMAGE -->
+    <div class="container-image">
+      <div class="label-image">
+        <label for="label-image1">
+          Upload Image
+        </label>
+
+        <div class="container-image-upload">
+          <input type="file" name="choose" id="upload-image" accept="image/*">
+          <label for="upload-image">
+            <div class="left-icon">
+              choose
+            </div>
+            <div class="right-icon">
+              <img src="assets/images/file.png"/></label>
+            </div>  
+        </div>
+      </div>
+
+      <!-- BUTTON SUBMIT  -->
+      <div id="submit-button-container">
+        <button id="submit-button">submit</button>
+      </div>
+    </div>
+  </form>  
+</div>
+
+      <!-- LIST PROJECT -->
+
+      <section id="listPosts">
+        <h3>My Project</h3>
+        <div class="posts" id="postProject">
+            <div class="card">
+              <a href="myprojectDetail.html">
+                <img src="assets/images/project1.png" alt="post" />
+                <h4>Project 1</h4>
+                <span>durasi : 3 bulan</span>
+                <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                <div class="technologyIcon">
+                  <img src="./assets/images/js.png" alt="tech1"/>
+                  <img src="./assets/images/go.png" alt="tech2"/>
+                  <img src="./assets/images/python.png" alt="tech3"/>
+                  <img src="./assets/images/figma.png" alt="tech4"/>
+                </div>
+              </a>
+                <div id="action">
+                  <button type="button">edit</button>
+                  <button type="button">delete</button>
+                </div>
+              </div>
+            <div class="card">
+              <a href="myprojectDetail.html">
+                <img src="assets/images/project2.jpg" alt="post" />
+                <h4>Project 1</h4>
+                <span>durasi : 3 bulan</span>
+                <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                <div class="technologyIcon">
+                  <img src="./assets/images/js.png" alt="tech1"/>
+                  <img src="./assets/images/go.png" alt="tech2"/>
+                  <img src="./assets/images/python.png" alt="tech3"/>
+                  <img src="./assets/images/figma.png" alt="tech4"/>
+                </div>
+              </a>
+                <div id="action">
+                  <button type="button">edit</button>
+                  <button type="button">delete</button>
+                </div>
+              </div>
+            <div class="card">
+              <a href="myprojectDetail.html">
+                <img src="assets/images/project3.jpg" alt="post" />
+                <h4>Project 1</h4>
+                <span>durasi : 3 bulan</span>
+                <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                <div class="technologyIcon">
+                  <img src="./assets/images/js.png" alt="tech1"/>
+                  <img src="./assets/images/go.png" alt="tech2"/>
+                  <img src="./assets/images/python.png" alt="tech3"/>
+                  <img src="./assets/images/figma.png" alt="tech4"/>
+                </div>
+              </a>
+                <div id="action">
+                  <button type="button">edit</button>
+                  <button type="button">delete</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    </body>
+    <script type="text/javascript" src="assets/js/project.js"></script>
+    <script type="text/javascript" src="assets/js/hamburger.js"></script>
+</html>

@@ -1,0 +1,91 @@
+/* CONTACT FORM */
+
+.tittle-contact {
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 500px;
+    margin: 40px auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+form div{
+    margin-top: 30px;
+
+}
+
+label{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: white;
+    font-size: 25px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.20) 0px 5px 10px;
+}
+
+textarea{
+    resize: none;
+    height: 150px;
+}
+
+#btn-submit {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 0px;
+    width: 30%;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 400px) {
+    .tittle-contact {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-size: .8rem;
+    }
+
+    form{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    form div{
+        margin-top: 15px;
+    }
+
+    label{
+        font-weight: bold;
+        font-size: .8rem;
+    }
+
+    input, select, textarea{
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        font-size: .7rem;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.20) 0px 5px 10px;
+    }
+}

@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+  </head>
+
+  <body>
+
+      <!-- NAVBAR -->
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li class="img-logo">
+              <a href="index.html" target="Index">
+                  <img class="logo" src="assets/images/logo.png"/>
+              </a>
+            </li>
+            <li class="links">
+              <a class="active" href="index.html">Home</a>
+            </li>
+            <li class="links">
+              <a href="myProject.html">My Project</a>
+            </li>
+            <li class="links">
+              <a href="testimonial.html">Testimonial</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <!-- a adalah ancor sebagai navigasi / kemana tujuan link href tersebut -->
+          <a href="contactForm.html">Contact Me</a>
+        </div>
+        <div class="toggle-nav" id="bars-menu">
+          <button class="btn-menu" onclick="openBars()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      </nav>
+
+      <div class="nav-mobile" id="nav-bars">
+        <div class="nav-mobile-index">
+        <a class="active-mobile" href="index.html">Home</a>
+        <a href="myProject.html">My Project</a>
+        <a href="testimonial.html">Testimonial</a>
+        </div>
+        <div class="nav-mobile-contact">
+          <a href="contactForm.html">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- FORM -->
+    <form>
+      <div class="tittle-contact">
+        <h1>GET IN TOUCH</h1>
+      </div>
+
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" />
+      </div>
+
+      <div>
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="number" min="0" />
+      </div>
+
+      <!-- Menu DropDown -->
+      <div>
+        <label for="subject">Subject</label>
+        <select id="subject">
+          <option disabled selected value></option>
+          <option value="Collaboration">Collaboration</option>
+          <option value="Let's Talk">Let's Talk</option>
+          <option value="Hiring">Hiring</option>
+        </select>
+      </div>
+
+      <!-- Form dengan kanvas yang lebih besar -->
+      <div>
+        <label for="message">Your Message</label>
+        <textarea id="message"></textarea>
+      </div>
+
+      <!-- Button -->
+      <div class="btn-submit">
+        <button id="btn-submit" type="button" onclick="getData()">submit</button>
+      </div>
+    </form>
+  </body>
+  <script type="text/javascript" src="assets/js/hamburger.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</html>
